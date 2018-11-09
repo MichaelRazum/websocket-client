@@ -67,10 +67,10 @@ setup(
     keywords='websockets',
     scripts=["bin/wsdump.py"],
     install_requires=install_requires,
-    packages=["websocket", "websocket.tests"],
+    packages=["websocket_client", "websocket_client.tests"],
     package_data={
-        'websocket.tests': ['data/*.txt']
+        'websocket_client.tests': ['data/*.txt']
     },
     tests_require=tests_require,
-    test_suite="websocket.tests"
+    test_suite="websocket_client.tests"
 )
